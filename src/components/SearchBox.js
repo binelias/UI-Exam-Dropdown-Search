@@ -8,7 +8,7 @@ function SearchBox({setCountry, setLanguage, selectCountry,selectLanguage}) {
   const [searchCountry, setSearchCountry] = useState('');
   const [searchLanguage, setSearchLanguage] = useState('');
 
-  //search function filter for country input form
+  //search method that filter country input form
   const filteredCountries = countries.filter(country=> {
     return (
       country.name.toLowerCase().includes(searchCountry.toLowerCase()) ||
@@ -16,7 +16,7 @@ function SearchBox({setCountry, setLanguage, selectCountry,selectLanguage}) {
     );
   })
 
-  //search function filter for language input form
+  //search method that filter language input form
   const filteredLanguages = languages.filter(language=> {
     return language.toLowerCase().includes(searchLanguage.toLowerCase());
   })
